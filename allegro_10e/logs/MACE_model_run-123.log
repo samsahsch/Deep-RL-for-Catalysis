@@ -1,0 +1,9 @@
+2025-12-04 10:31:43.651 INFO: ===========VERIFYING SETTINGS===========
+2025-12-04 10:31:43.653 INFO: Stage Two is activated as start_stage_two was defined
+2025-12-04 10:31:43.654 INFO: MACE version: 0.3.15
+2025-12-04 10:31:45.905 INFO: CUDA version: 12.8, CUDA device: 0
+2025-12-04 10:31:46.580 INFO: ===========LOADING INPUT DATA===========
+2025-12-04 10:31:46.581 INFO: Using heads: ['Default']
+2025-12-04 10:31:46.581 INFO: Using the key specifications to parse data:
+2025-12-04 10:31:46.582 INFO: Default: KeySpecification(info_keys={'energy': 'energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'total_charge', 'polarizability': 'polarizability', 'total_spin': 'total_spin'}, arrays_keys={'forces': 'forces', 'charges': 'REF_charges'})
+2025-12-04 10:31:46.582 INFO: =============    Processing head Default     ===========

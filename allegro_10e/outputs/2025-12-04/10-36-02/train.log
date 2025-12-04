@@ -1,0 +1,19 @@
+[2025-12-04 10:36:03,069][nequip.utils.versions.package_versions][INFO] - [rank: 0] Version Information:
+[2025-12-04 10:36:03,073][nequip.utils.versions.package_versions][INFO] - [rank: 0] torch 2.9.1
+[2025-12-04 10:36:03,073][nequip.utils.versions.package_versions][INFO] - [rank: 0] e3nn 0.5.8
+[2025-12-04 10:36:03,074][nequip.utils.versions.package_versions][INFO] - [rank: 0] nequip 0.16.1
+[2025-12-04 10:36:03,074][nequip.utils.versions.package_versions][INFO] - [rank: 0] allegro 0.8.0
+[2025-12-04 10:36:03,074][nequip.scripts.train][INFO] - [rank: 0] This `nequip-train` run will perform the following tasks: ['train', 'test']
+[2025-12-04 10:36:03,074][nequip.scripts.train][INFO] - [rank: 0] and use the output directory provided by Hydra: /global/cfs/cdirs/m5047/train_sam/allegro_10e/outputs/2025-12-04/10-36-02
+[2025-12-04 10:36:03,108][nequip.scripts.train][INFO] - [rank: 0] Building datamodule ...
+[2025-12-04 10:36:03,125][nequip.data.datamodule._base_datamodule][INFO] - [rank: 0] Found 1 training dataset(s), 1 validation dataset(s), 1 test dataset(s), and 0 predict dataset(s).
+[2025-12-04 10:36:36,361][nequip.data.stats_manager][INFO] - [rank: 0] Computed data statistics:
+[2025-12-04 10:36:36,362][nequip.data.stats_manager][INFO] - [rank: 0] num_neighbors_mean: 94.33615740740741
+[2025-12-04 10:36:36,363][nequip.data.stats_manager][INFO] - [rank: 0] per_type_num_neighbors_mean_H: 94.42649884259255
+[2025-12-04 10:36:36,363][nequip.data.stats_manager][INFO] - [rank: 0] per_type_num_neighbors_mean_O: 94.15547453703704
+[2025-12-04 10:36:36,363][nequip.data.stats_manager][INFO] - [rank: 0] per_atom_energy_mean: -5.208124335341453
+[2025-12-04 10:36:36,363][nequip.data.stats_manager][INFO] - [rank: 0] forces_rms: 0.83703964537533
+[2025-12-04 10:36:36,363][nequip.data.stats_manager][INFO] - [rank: 0] per_type_forces_rms_H: 0.7266157828407632
+[2025-12-04 10:36:36,364][nequip.data.stats_manager][INFO] - [rank: 0] per_type_forces_rms_O: 1.0227243578030132
+[2025-12-04 10:36:36,377][nequip.scripts.train][INFO] - [rank: 0] Building model and training_module from scratch ...
+[2025-12-04 10:36:36,593][nequip.scripts.train][INFO] - [rank: 0] TRAIN RUN START

@@ -1,0 +1,8 @@
+[2025-12-02 14:21:24,714][nequip.utils.versions.package_versions][INFO] - [rank: 0] Version Information:
+[2025-12-02 14:21:24,714][nequip.utils.versions.package_versions][INFO] - [rank: 0] torch 2.9.1
+[2025-12-02 14:21:24,714][nequip.utils.versions.package_versions][INFO] - [rank: 0] e3nn 0.5.8
+[2025-12-02 14:21:24,714][nequip.utils.versions.package_versions][INFO] - [rank: 0] nequip 0.16.1
+[2025-12-02 14:21:24,714][nequip.scripts.train][INFO] - [rank: 0] This `nequip-train` run will perform the following tasks: ['train', 'test']
+[2025-12-02 14:21:24,714][nequip.scripts.train][INFO] - [rank: 0] and use the output directory provided by Hydra: /global/cfs/cdirs/m5047/train_sam/Allegro_example_6e/outputs/2025-12-02/14-21-24
+[2025-12-02 14:21:24,747][nequip.scripts.train][INFO] - [rank: 0] Building datamodule ...
+[2025-12-02 14:21:24,757][nequip.data.datamodule._base_datamodule][INFO] - [rank: 0] Found 1 training dataset(s), 1 validation dataset(s), 1 test dataset(s), and 0 predict dataset(s).

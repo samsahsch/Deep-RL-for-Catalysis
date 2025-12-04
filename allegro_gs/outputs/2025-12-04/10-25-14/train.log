@@ -1,0 +1,20 @@
+[2025-12-04 10:25:14,439][nequip.utils.versions.package_versions][INFO] - [rank: 0] Version Information:
+[2025-12-04 10:25:14,440][nequip.utils.versions.package_versions][INFO] - [rank: 0] torch 2.9.1
+[2025-12-04 10:25:14,440][nequip.utils.versions.package_versions][INFO] - [rank: 0] e3nn 0.5.8
+[2025-12-04 10:25:14,440][nequip.utils.versions.package_versions][INFO] - [rank: 0] nequip 0.16.1
+[2025-12-04 10:25:14,440][nequip.scripts.train][INFO] - [rank: 0] This `nequip-train` run will perform the following tasks: ['train', 'test']
+[2025-12-04 10:25:14,440][nequip.scripts.train][INFO] - [rank: 0] and use the output directory provided by Hydra: /global/cfs/cdirs/m5047/train_sam/allegro_gs/outputs/2025-12-04/10-25-14
+[2025-12-04 10:25:14,474][nequip.scripts.train][INFO] - [rank: 0] Building datamodule ...
+[2025-12-04 10:25:14,489][nequip.data.datamodule._base_datamodule][INFO] - [rank: 0] Found 1 training dataset(s), 1 validation dataset(s), 1 test dataset(s), and 0 predict dataset(s).
+[2025-12-04 10:25:35,967][nequip.data.stats_manager][INFO] - [rank: 0] Computed data statistics:
+[2025-12-04 10:25:35,968][nequip.data.stats_manager][INFO] - [rank: 0] num_neighbors_mean: 96.6823080591321
+[2025-12-04 10:25:35,968][nequip.data.stats_manager][INFO] - [rank: 0] per_type_num_neighbors_mean_H: 96.70677952630743
+[2025-12-04 10:25:35,968][nequip.data.stats_manager][INFO] - [rank: 0] per_type_num_neighbors_mean_O: 96.63336512478139
+[2025-12-04 10:25:35,968][nequip.data.stats_manager][INFO] - [rank: 0] per_atom_energy_mean: -5.253457484128464
+[2025-12-04 10:25:35,969][nequip.data.stats_manager][INFO] - [rank: 0] forces_rms: 0.9487098028444477
+[2025-12-04 10:25:35,969][nequip.data.stats_manager][INFO] - [rank: 0] per_type_forces_rms_H: 0.8193790523735909
+[2025-12-04 10:25:35,969][nequip.data.stats_manager][INFO] - [rank: 0] per_type_forces_rms_O: 1.165069443038551
+[2025-12-04 10:25:35,980][nequip.scripts.train][INFO] - [rank: 0] Building model and training_module from scratch ...
+[2025-12-04 10:25:36,188][hydra.utils][ERROR] - Error getting callable at allegro.model.AllegroModel : Error loading 'allegro.model.AllegroModel':
+ModuleNotFoundError("No module named 'allegro.model'")
+Are you sure that 'model' is importable from module 'allegro'?

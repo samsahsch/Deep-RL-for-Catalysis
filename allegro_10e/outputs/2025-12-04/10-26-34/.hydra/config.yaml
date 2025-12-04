@@ -1,0 +1,123 @@
+run:
+- train
+- test
+cutoff_radius: 6.0
+model_type_names:
+- H
+- O
+chemical_species_to_atom_type_map:
+  H: H
+  O: O
+monitored_metric: val0_epoch/weighted_sum
+num_scalar_features: 128
+data:
+  _target_: nequip.data.datamodule.ASEDataModule
+  seed: 456
+  split_dataset:
+    file_path: 10e.xyz
+    train: 0.8
+    val: 0.1
+    test: 0.1
+  transforms:
+  - _target_: nequip.data.transforms.NeighborListTransform
+    r_max: ${cutoff_radius}
+  - _target_: nequip.data.transforms.ChemicalSpeciesToAtomTypeMapper
+    model_type_names: ${model_type_names}
+    chemical_species_to_atom_type_map: ${chemical_species_to_atom_type_map}
+  train_dataloader:
+    _target_: torch.utils.data.DataLoader
+    batch_size: 4
+    num_workers: 1
+    shuffle: true
+  val_dataloader:
+    _target_: torch.utils.data.DataLoader
+    batch_size: 4
+    num_workers: ${data.train_dataloader.num_workers}
+  test_dataloader: ${data.val_dataloader}
+  stats_manager:
+    _target_: nequip.data.CommonDataStatisticsManager
+    type_names: ${model_type_names}
+trainer:
+  _target_: lightning.Trainer
+  devices: 1
+  max_epochs: 1000
+  accelerator: gpu
+  enable_checkpointing: true
+  check_val_every_n_epoch: 1
+  log_every_n_steps: 10
+  callbacks:
+  - _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    dirpath: ${hydra:runtime.output_dir}
+    save_last: true
+  - _target_: nequip.train.callbacks.TF32Scheduler
+    schedule:
+      0: true
+training_module:
+  _target_: nequip.train.EMALightningModule
+  loss:
+    _target_: nequip.train.EnergyForceLoss
+    per_atom_energy: true
+    coeffs:
+      total_energy: 1.0
+      forces: 1.0
+  val_metrics:
+    _target_: nequip.train.EnergyForceMetrics
+    coeffs:
+      total_energy_rmse: 1.0
+      per_atom_energy_rmse: null
+      forces_rmse: 1.0
+      total_energy_mae: null
+      per_atom_energy_mae: null
+      forces_mae: null
+  test_metrics: ${training_module.val_metrics}
+  optimizer:
+    _target_: torch.optim.Adam
+    lr: 0.001
+  lr_scheduler:
+    scheduler:
+      _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+      factor: 0.6
+      patience: 25
+      min_lr: 0.0001
+      threshold: 0.02
+      threshold_mode: rel
+    monitor: val0_epoch/weighted_sum
+    interval: epoch
+    frequency: 1
+  model:
+    _target_: allegro.model.AllegroModel
+    compile_mode: compile
+    seed: 456
+    model_dtype: float32
+    type_names: ${model_type_names}
+    r_max: ${cutoff_radius}
+    radial_chemical_embed:
+      _target_: allegro.nn.TwoBodyBesselScalarEmbed
+      num_bessels: 8
+      bessel_trainable: false
+      polynomial_cutoff_p: 6
+    radial_chemical_embed_dim: ${num_scalar_features}
+    scalar_embed_mlp_hidden_layers_depth: 2
+    scalar_embed_mlp_hidden_layers_width: ${num_scalar_features}
+    scalar_embed_mlp_nonlinearity: silu
+    l_max: 1
+    num_layers: 2
+    num_scalar_features: ${num_scalar_features}
+    num_tensor_features: 32
+    allegro_mlp_hidden_layers_depth: 2
+    allegro_mlp_hidden_layers_width: ${num_scalar_features}
+    allegro_mlp_nonlinearity: silu
+    parity: true
+    tp_path_channel_coupling: true
+    readout_mlp_hidden_layers_depth: 1
+    readout_mlp_hidden_layers_width: ${num_scalar_features}
+    readout_mlp_nonlinearity: silu
+    avg_num_neighbors: ${training_data_stats:num_neighbors_mean}
+    per_type_energy_shifts: ${training_data_stats:per_atom_energy_mean}
+    per_type_energy_scales: ${training_data_stats:forces_rms}
+    per_type_energy_scales_trainable: false
+    per_type_energy_shifts_trainable: false
+    pair_potential:
+      _target_: nequip.nn.pair_potential.ZBL
+      units: metal
+      chemical_species: ${model_type_names}
