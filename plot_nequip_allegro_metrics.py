@@ -9,7 +9,7 @@ ENERGY_RMSE_COL = 'val0_epoch/per_atom_energy_rmse'
 FORCES_RMSE_COL = 'val0_epoch/forces_rmse'
 LOSS_COL = 'val0_epoch/weighted_sum'
 EPOCH_COL = 'epoch'
-FILENAME = './nequip_6e/lightning_logs/version_0/metrics.csv' # Changed to original default for consistency
+FILENAME = './allegro_6e/lightning_logs/version_4/metrics.csv' # Changed to original default for consistency
 
 def plot_training_history(filename=FILENAME):
     """

@@ -5,7 +5,7 @@ import sys
 
 # --- Configuration ---
 # File containing the JSON log entries
-FILENAME = './mace_10e/results/MACE_model_run-123_train.txt' 
+FILENAME = './mace_16e/results/MACE_model_run-123_train.txt' 
 
 # Metrics to plot (corresponding to keys in the 'eval' mode logs)
 ENERGY_RMSE_KEY = 'rmse_e_per_atom'

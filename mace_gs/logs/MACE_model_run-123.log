@@ -316,3 +316,76 @@
 2025-12-04 10:23:11.663 INFO: Epoch 262: head: Default, loss=0.00024769, RMSE_E_per_atom=    0.48 meV, RMSE_F=    4.90 meV / A
 2025-12-04 10:25:52.872 INFO: Epoch 263: head: Default, loss=0.00024445, RMSE_E_per_atom=    0.27 meV, RMSE_F=    4.86 meV / A
 2025-12-04 10:28:34.824 INFO: Epoch 264: head: Default, loss=0.00024271, RMSE_E_per_atom=    0.27 meV, RMSE_F=    4.85 meV / A
+2025-12-04 23:15:38.612 INFO: ===========VERIFYING SETTINGS===========
+2025-12-04 23:15:38.649 INFO: Stage Two is activated as start_stage_two was defined
+2025-12-04 23:15:38.651 INFO: MACE version: 0.3.15
+2025-12-04 23:15:38.959 INFO: CUDA version: 12.8, CUDA device: 0
+2025-12-04 23:15:39.656 INFO: ===========LOADING INPUT DATA===========
+2025-12-04 23:15:39.657 INFO: Using heads: ['Default']
+2025-12-04 23:15:39.657 INFO: Using the key specifications to parse data:
+2025-12-04 23:15:39.658 INFO: Default: KeySpecification(info_keys={'energy': 'energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'total_charge', 'polarizability': 'polarizability', 'total_spin': 'total_spin'}, arrays_keys={'forces': 'forces', 'charges': 'REF_charges'})
+2025-12-04 23:15:39.658 INFO: =============    Processing head Default     ===========
+2025-12-04 23:15:44.389 WARNING: Since ASE version 3.23.0b1, using energy_key 'energy' is no longer safe when communicating between MACE and ASE. We recommend using a different key, rewriting 'energy' to 'REF_energy'. You need to use --energy_key='REF_energy' to specify the chosen key name.
+2025-12-04 23:15:44.517 WARNING: Since ASE version 3.23.0b1, using forces_key 'forces' is no longer safe when communicating between MACE and ASE. We recommend using a different key, rewriting 'forces' to 'REF_forces'. You need to use --forces_key='REF_forces' to specify the chosen key name.
+2025-12-04 23:15:44.760 INFO: Training set 1/1 [energy: 1455, stress: 0, virials: 0, dipole components: 0, head: 1455, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 1455, charges: 0]
+2025-12-04 23:15:44.767 INFO: Total Training set [energy: 1455, stress: 0, virials: 0, dipole components: 0, head: 1455, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 1455, charges: 0]
+2025-12-04 23:15:44.772 INFO: No validation set provided, splitting training data instead.
+2025-12-04 23:15:44.873 INFO: Using random 10% of training set for validation with indices saved in: ./MACE_model_valid_indices_123.txt
+2025-12-04 23:15:44.879 INFO: Random Split Training set [energy: 1310, stress: 0, virials: 0, dipole components: 0, head: 1310, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 1310, charges: 0]
+2025-12-04 23:15:44.881 INFO: Random Split Validation set [energy: 145, stress: 0, virials: 0, dipole components: 0, head: 145, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 145, charges: 0]
+2025-12-04 23:15:44.882 INFO: Total number of configurations: train=1310, valid=145, tests=[],
+2025-12-04 23:15:44.934 INFO: Atomic Numbers used: [np.int64(1), np.int64(8)]
+2025-12-04 23:15:44.939 INFO: Isolated Atomic Energies (E0s) not in training file, using command line argument
+2025-12-04 23:15:44.940 INFO: Computing average Atomic Energies using least squares regression
+2025-12-04 23:15:44.966 INFO: Atomic Energies used (z: eV) for head Default: {1: -6.304134323742526, 8: -3.1520671618712592}
+2025-12-04 23:15:44.973 INFO: Processing datasets for head 'Default'
+2025-12-04 23:16:00.229 INFO: Combining 1 list datasets for head 'Default'
+2025-12-04 23:16:01.999 INFO: Head 'Default' training dataset size: 1310
+2025-12-04 23:16:02.001 INFO: Computing average number of neighbors
+2025-12-04 23:16:04.171 INFO: Average number of neighbors: 96.7160873413086
+2025-12-04 23:16:04.174 INFO: During training the following quantities will be reported: energy, forces
+2025-12-04 23:16:04.175 INFO: ===========MODEL DETAILS===========
+2025-12-04 23:16:05.296 INFO: Building model
+2025-12-04 23:16:05.297 INFO: Message passing with 128 channels and max_L=1 (128x0e + 128x1o)
+2025-12-04 23:16:05.298 INFO: 2 layers, each with correlation order: 3 (body order: 4) and spherical harmonics up to: l=3
+2025-12-04 23:16:05.302 INFO: 8 radial and 5 basis functions
+2025-12-04 23:16:05.303 INFO: Radial cutoff: 6.0 A (total receptive field for each atom: 12.0 A)
+2025-12-04 23:16:05.303 INFO: Distance transform for radial basis functions: None
+2025-12-04 23:16:05.304 INFO: Hidden irreps: 128x0e + 128x1o
+2025-12-04 23:16:06.898 INFO: Total number of parameters: 655248
+2025-12-04 23:16:06.900 INFO: 
+2025-12-04 23:16:06.902 INFO: ===========OPTIMIZER INFORMATION===========
+2025-12-04 23:16:06.903 INFO: Using ADAM as parameter optimizer
+2025-12-04 23:16:06.907 INFO: Batch size: 4
+2025-12-04 23:16:06.909 INFO: Using Exponential Moving Average with decay: 0.99
+2025-12-04 23:16:06.909 INFO: Number of gradient updates: 65500
+2025-12-04 23:16:06.910 INFO: Learning rate: 0.01, weight decay: 5e-07
+2025-12-04 23:16:06.910 INFO: WeightedEnergyForcesLoss(energy_weight=1.000, forces_weight=100.000)
+2025-12-04 23:16:06.911 INFO: Stage Two (after 150 epochs) with loss function: WeightedEnergyForcesLoss(energy_weight=1000.000, forces_weight=100.000), with energy weight : 1000.0, forces weight : 100.0 and learning rate : 0.001
+2025-12-04 23:16:07.009 WARNING: No SWA checkpoint found, while SWA is enabled. Compare the swa_start parameter and the latest checkpoint.
+2025-12-04 23:16:07.011 INFO: Loading checkpoint: ./checkpoints/MACE_model_run-123_epoch-264.pt
+2025-12-04 23:16:07.137 INFO: Using gradient clipping with tolerance=10.000
+2025-12-04 23:16:07.139 INFO: 
+2025-12-04 23:16:07.142 INFO: ===========TRAINING===========
+2025-12-04 23:16:07.143 INFO: Started training, reporting errors on validation set
+2025-12-04 23:16:07.144 INFO: Loss metrics on validation set
+2025-12-04 23:16:16.568 INFO: Initial: head: Default, loss=0.00024271, RMSE_E_per_atom=    0.27 meV, RMSE_F=    4.85 meV / A
+2025-12-04 23:16:16.569 INFO: Training complete
+2025-12-04 23:16:16.570 INFO: 
+2025-12-04 23:16:16.570 INFO: ===========RESULTS===========
+2025-12-04 23:16:16.574 INFO: Loading checkpoint: ./checkpoints/MACE_model_run-123_epoch-264.pt
+2025-12-04 23:16:16.650 INFO: Loaded Stage one model from epoch 264 for evaluation
+2025-12-04 23:16:16.655 INFO: Saving model to checkpoints/MACE_model_run-123.model
+2025-12-04 23:16:17.193 INFO: Compiling model, saving metadata to MACE_model_compiled.model
+2025-12-04 23:16:18.846 INFO: Computing metrics for training, validation, and test sets
+2025-12-04 23:16:18.848 INFO: Skipping evaluation for heads: ['pt_head']
+2025-12-04 23:16:18.849 INFO: Evaluating train_Default ...
+2025-12-04 23:17:10.527 INFO: Evaluating valid_Default ...
+2025-12-04 23:17:17.491 INFO: Error-table on TRAIN and VALID:
++---------------+---------------------+------------------+-------------------+
+|  config_type  | RMSE E / meV / atom | RMSE F / meV / A | relative F RMSE % |
++---------------+---------------------+------------------+-------------------+
+| train_Default |            0.3      |          4.8     |          0.50     |
+| valid_Default |            0.3      |          4.8     |          0.53     |
++---------------+---------------------+------------------+-------------------+
+2025-12-04 23:18:32.843 WARNING: No SWA checkpoint found, while SWA is enabled. Compare the swa_start parameter and the latest checkpoint.

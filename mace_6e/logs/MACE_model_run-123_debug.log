@@ -428,3 +428,128 @@
 2025-12-04 10:32:45.002 INFO: Epoch 117: head: Default, loss=0.00095703, RMSE_E_per_atom=    2.57 meV, RMSE_F=    9.78 meV / A
 2025-12-04 10:36:23.467 INFO: Epoch 118: head: Default, loss=0.00092559, RMSE_E_per_atom=    2.62 meV, RMSE_F=    9.62 meV / A
 2025-12-04 10:40:03.123 INFO: Epoch 119: head: Default, loss=0.00092864, RMSE_E_per_atom=    2.50 meV, RMSE_F=    9.63 meV / A
+2025-12-04 10:43:42.514 INFO: Epoch 120: head: Default, loss=0.00093223, RMSE_E_per_atom=    2.55 meV, RMSE_F=    9.65 meV / A
+2025-12-04 10:47:20.270 INFO: Epoch 121: head: Default, loss=0.00089906, RMSE_E_per_atom=    2.67 meV, RMSE_F=    9.48 meV / A
+2025-12-04 10:47:20.273 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-116.pt
+2025-12-04 10:47:20.291 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-121.pt
+2025-12-04 10:50:58.043 INFO: Epoch 122: head: Default, loss=0.00088123, RMSE_E_per_atom=    2.63 meV, RMSE_F=    9.38 meV / A
+2025-12-04 10:50:58.060 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-121.pt
+2025-12-04 10:50:58.082 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-122.pt
+2025-12-04 10:54:35.634 INFO: Epoch 123: head: Default, loss=0.00088430, RMSE_E_per_atom=    2.56 meV, RMSE_F=    9.40 meV / A
+2025-12-04 10:58:12.881 INFO: Epoch 124: head: Default, loss=0.00085815, RMSE_E_per_atom=    2.74 meV, RMSE_F=    9.26 meV / A
+2025-12-04 10:58:12.883 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-122.pt
+2025-12-04 10:58:12.905 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-124.pt
+2025-12-04 11:01:50.345 INFO: Epoch 125: head: Default, loss=0.00090153, RMSE_E_per_atom=    2.70 meV, RMSE_F=    9.49 meV / A
+2025-12-04 11:05:27.545 INFO: Epoch 126: head: Default, loss=0.00092174, RMSE_E_per_atom=    2.56 meV, RMSE_F=    9.60 meV / A
+2025-12-04 11:09:04.945 INFO: Epoch 127: head: Default, loss=0.00086563, RMSE_E_per_atom=    2.48 meV, RMSE_F=    9.30 meV / A
+2025-12-04 11:12:42.502 INFO: Epoch 128: head: Default, loss=0.00084888, RMSE_E_per_atom=    2.62 meV, RMSE_F=    9.21 meV / A
+2025-12-04 11:12:42.505 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-124.pt
+2025-12-04 11:12:42.525 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-128.pt
+2025-12-04 11:16:20.328 INFO: Epoch 129: head: Default, loss=0.00084600, RMSE_E_per_atom=    2.73 meV, RMSE_F=    9.19 meV / A
+2025-12-04 11:16:20.330 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-128.pt
+2025-12-04 11:16:20.349 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-129.pt
+2025-12-04 11:19:57.878 INFO: Epoch 130: head: Default, loss=0.00095548, RMSE_E_per_atom=    2.44 meV, RMSE_F=    9.77 meV / A
+2025-12-04 11:23:35.118 INFO: Epoch 131: head: Default, loss=0.00085399, RMSE_E_per_atom=    2.60 meV, RMSE_F=    9.24 meV / A
+2025-12-04 11:27:12.620 INFO: Epoch 132: head: Default, loss=0.00085095, RMSE_E_per_atom=    2.64 meV, RMSE_F=    9.22 meV / A
+2025-12-04 11:30:51.222 INFO: Epoch 133: head: Default, loss=0.00082517, RMSE_E_per_atom=    2.63 meV, RMSE_F=    9.08 meV / A
+2025-12-04 11:30:51.225 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-129.pt
+2025-12-04 11:30:51.245 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-133.pt
+2025-12-04 11:34:30.482 INFO: Epoch 134: head: Default, loss=0.00081010, RMSE_E_per_atom=    2.72 meV, RMSE_F=    9.00 meV / A
+2025-12-04 11:34:30.490 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-133.pt
+2025-12-04 11:34:30.510 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-134.pt
+2025-12-04 11:38:08.818 INFO: Epoch 135: head: Default, loss=0.00085786, RMSE_E_per_atom=    2.61 meV, RMSE_F=    9.26 meV / A
+2025-12-04 11:41:46.523 INFO: Epoch 136: head: Default, loss=0.00095169, RMSE_E_per_atom=    2.72 meV, RMSE_F=    9.75 meV / A
+2025-12-04 11:45:25.144 INFO: Epoch 137: head: Default, loss=0.00085460, RMSE_E_per_atom=    2.51 meV, RMSE_F=    9.24 meV / A
+2025-12-04 11:49:04.778 INFO: Epoch 138: head: Default, loss=0.00080985, RMSE_E_per_atom=    2.56 meV, RMSE_F=    9.00 meV / A
+2025-12-04 11:49:04.781 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-134.pt
+2025-12-04 11:49:04.805 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-138.pt
+2025-12-04 11:52:44.925 INFO: Epoch 139: head: Default, loss=0.00079140, RMSE_E_per_atom=    2.64 meV, RMSE_F=    8.89 meV / A
+2025-12-04 11:52:44.927 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-138.pt
+2025-12-04 11:52:44.944 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-139.pt
+2025-12-04 11:56:21.908 INFO: Epoch 140: head: Default, loss=0.00082396, RMSE_E_per_atom=    2.62 meV, RMSE_F=    9.07 meV / A
+2025-12-04 11:59:59.624 INFO: Epoch 141: head: Default, loss=0.00079443, RMSE_E_per_atom=    2.67 meV, RMSE_F=    8.91 meV / A
+2025-12-04 12:03:36.792 INFO: Epoch 142: head: Default, loss=0.00078689, RMSE_E_per_atom=    2.75 meV, RMSE_F=    8.87 meV / A
+2025-12-04 12:03:36.825 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-139.pt
+2025-12-04 12:03:36.842 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-142.pt
+2025-12-04 12:07:14.233 INFO: Epoch 143: head: Default, loss=0.00082829, RMSE_E_per_atom=    2.50 meV, RMSE_F=    9.10 meV / A
+2025-12-04 12:10:51.825 INFO: Epoch 144: head: Default, loss=0.00095400, RMSE_E_per_atom=    2.32 meV, RMSE_F=    9.76 meV / A
+2025-12-04 12:14:28.869 INFO: Epoch 145: head: Default, loss=0.00086383, RMSE_E_per_atom=    2.45 meV, RMSE_F=    9.29 meV / A
+2025-12-04 12:18:08.092 INFO: Epoch 146: head: Default, loss=0.00086044, RMSE_E_per_atom=    2.49 meV, RMSE_F=    9.27 meV / A
+2025-12-04 12:21:47.937 INFO: Epoch 147: head: Default, loss=0.00078693, RMSE_E_per_atom=    2.56 meV, RMSE_F=    8.87 meV / A
+2025-12-04 12:25:25.164 INFO: Epoch 148: head: Default, loss=0.00076398, RMSE_E_per_atom=    2.64 meV, RMSE_F=    8.74 meV / A
+2025-12-04 12:25:25.167 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-142.pt
+2025-12-04 12:25:25.237 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-148.pt
+2025-12-04 12:29:02.814 INFO: Epoch 149: head: Default, loss=0.00075602, RMSE_E_per_atom=    2.64 meV, RMSE_F=    8.69 meV / A
+2025-12-04 12:29:02.817 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-148.pt
+2025-12-04 12:29:02.842 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-149.pt
+2025-12-04 12:32:40.569 INFO: Epoch 150: head: Default, loss=0.00074569, RMSE_E_per_atom=    2.65 meV, RMSE_F=    8.63 meV / A
+2025-12-04 12:32:40.572 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-149.pt
+2025-12-04 12:32:40.591 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-150.pt
+2025-12-04 12:36:18.520 INFO: Epoch 151: head: Default, loss=0.00074773, RMSE_E_per_atom=    2.63 meV, RMSE_F=    8.64 meV / A
+2025-12-04 12:39:58.219 INFO: Epoch 152: head: Default, loss=0.00074888, RMSE_E_per_atom=    2.60 meV, RMSE_F=    8.65 meV / A
+2025-12-04 12:43:37.461 INFO: Epoch 153: head: Default, loss=0.00075636, RMSE_E_per_atom=    2.59 meV, RMSE_F=    8.69 meV / A
+2025-12-04 12:47:14.636 INFO: Epoch 154: head: Default, loss=0.00079144, RMSE_E_per_atom=    2.60 meV, RMSE_F=    8.89 meV / A
+2025-12-04 12:50:51.587 INFO: Epoch 155: head: Default, loss=0.00073669, RMSE_E_per_atom=    2.61 meV, RMSE_F=    8.58 meV / A
+2025-12-04 12:50:51.589 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-150.pt
+2025-12-04 12:50:51.601 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-155.pt
+2025-12-04 12:54:29.100 INFO: Epoch 156: head: Default, loss=0.00091351, RMSE_E_per_atom=    2.63 meV, RMSE_F=    9.55 meV / A
+2025-12-04 12:58:06.219 INFO: Epoch 157: head: Default, loss=0.00079082, RMSE_E_per_atom=    2.68 meV, RMSE_F=    8.89 meV / A
+2025-12-04 13:01:43.174 INFO: Epoch 158: head: Default, loss=0.00083277, RMSE_E_per_atom=    2.51 meV, RMSE_F=    9.12 meV / A
+2025-12-04 13:05:20.441 INFO: Epoch 159: head: Default, loss=0.00078373, RMSE_E_per_atom=    2.56 meV, RMSE_F=    8.85 meV / A
+2025-12-04 13:08:57.660 INFO: Epoch 160: head: Default, loss=0.00074987, RMSE_E_per_atom=    2.49 meV, RMSE_F=    8.66 meV / A
+2025-12-04 13:12:34.827 INFO: Epoch 161: head: Default, loss=0.00074015, RMSE_E_per_atom=    2.57 meV, RMSE_F=    8.60 meV / A
+2025-12-04 13:16:12.018 INFO: Epoch 162: head: Default, loss=0.00072786, RMSE_E_per_atom=    2.56 meV, RMSE_F=    8.53 meV / A
+2025-12-04 13:16:12.022 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-155.pt
+2025-12-04 13:16:12.044 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-162.pt
+2025-12-04 13:19:49.758 INFO: Epoch 163: head: Default, loss=0.00071263, RMSE_E_per_atom=    2.63 meV, RMSE_F=    8.44 meV / A
+2025-12-04 13:19:49.760 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-162.pt
+2025-12-04 13:19:49.793 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-163.pt
+2025-12-04 13:23:27.063 INFO: Epoch 164: head: Default, loss=0.00075543, RMSE_E_per_atom=    2.56 meV, RMSE_F=    8.69 meV / A
+2025-12-04 13:27:04.542 INFO: Epoch 165: head: Default, loss=0.00079496, RMSE_E_per_atom=    2.41 meV, RMSE_F=    8.91 meV / A
+2025-12-04 13:30:42.214 INFO: Epoch 166: head: Default, loss=0.00072107, RMSE_E_per_atom=    2.58 meV, RMSE_F=    8.49 meV / A
+2025-12-04 13:34:19.303 INFO: Epoch 167: head: Default, loss=0.00070789, RMSE_E_per_atom=    2.62 meV, RMSE_F=    8.41 meV / A
+2025-12-04 13:34:19.306 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-163.pt
+2025-12-04 13:34:19.330 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-167.pt
+2025-12-04 13:37:56.681 INFO: Epoch 168: head: Default, loss=0.00072310, RMSE_E_per_atom=    2.57 meV, RMSE_F=    8.50 meV / A
+2025-12-04 13:41:34.062 INFO: Epoch 169: head: Default, loss=0.00072605, RMSE_E_per_atom=    2.61 meV, RMSE_F=    8.52 meV / A
+2025-12-04 13:45:11.277 INFO: Epoch 170: head: Default, loss=0.00070270, RMSE_E_per_atom=    2.61 meV, RMSE_F=    8.38 meV / A
+2025-12-04 13:45:11.279 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-167.pt
+2025-12-04 13:45:11.294 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-170.pt
+2025-12-04 13:48:48.612 INFO: Epoch 171: head: Default, loss=0.00068923, RMSE_E_per_atom=    2.68 meV, RMSE_F=    8.30 meV / A
+2025-12-04 13:48:48.615 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-170.pt
+2025-12-04 13:48:48.635 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-171.pt
+2025-12-04 13:52:26.025 INFO: Epoch 172: head: Default, loss=0.00069993, RMSE_E_per_atom=    2.52 meV, RMSE_F=    8.36 meV / A
+2025-12-04 13:56:03.402 INFO: Epoch 173: head: Default, loss=0.00071343, RMSE_E_per_atom=    2.63 meV, RMSE_F=    8.44 meV / A
+2025-12-04 13:59:41.969 INFO: Epoch 174: head: Default, loss=0.00070274, RMSE_E_per_atom=    2.52 meV, RMSE_F=    8.38 meV / A
+2025-12-04 14:03:18.921 INFO: Epoch 175: head: Default, loss=0.00066474, RMSE_E_per_atom=    2.69 meV, RMSE_F=    8.15 meV / A
+2025-12-04 14:03:18.923 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-171.pt
+2025-12-04 14:03:18.947 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-175.pt
+2025-12-04 14:06:56.341 INFO: Epoch 176: head: Default, loss=0.00074348, RMSE_E_per_atom=    2.49 meV, RMSE_F=    8.62 meV / A
+2025-12-04 14:10:33.932 INFO: Epoch 177: head: Default, loss=0.00076700, RMSE_E_per_atom=    2.51 meV, RMSE_F=    8.75 meV / A
+2025-12-04 14:14:11.237 INFO: Epoch 178: head: Default, loss=0.00071684, RMSE_E_per_atom=    2.41 meV, RMSE_F=    8.46 meV / A
+2025-12-04 14:17:48.926 INFO: Epoch 179: head: Default, loss=0.00068237, RMSE_E_per_atom=    2.47 meV, RMSE_F=    8.26 meV / A
+2025-12-04 14:21:26.345 INFO: Epoch 180: head: Default, loss=0.00072631, RMSE_E_per_atom=    2.49 meV, RMSE_F=    8.52 meV / A
+2025-12-04 14:25:03.215 INFO: Epoch 181: head: Default, loss=0.00076158, RMSE_E_per_atom=    2.48 meV, RMSE_F=    8.72 meV / A
+2025-12-04 14:28:40.269 INFO: Epoch 182: head: Default, loss=0.00069807, RMSE_E_per_atom=    2.52 meV, RMSE_F=    8.35 meV / A
+2025-12-04 14:32:17.324 INFO: Epoch 183: head: Default, loss=0.00068192, RMSE_E_per_atom=    2.63 meV, RMSE_F=    8.25 meV / A
+2025-12-04 14:35:54.272 INFO: Epoch 184: head: Default, loss=0.00069716, RMSE_E_per_atom=    2.59 meV, RMSE_F=    8.35 meV / A
+2025-12-04 14:39:31.244 INFO: Epoch 185: head: Default, loss=0.00067127, RMSE_E_per_atom=    2.59 meV, RMSE_F=    8.19 meV / A
+2025-12-04 14:43:08.218 INFO: Epoch 186: head: Default, loss=0.00068159, RMSE_E_per_atom=    2.55 meV, RMSE_F=    8.25 meV / A
+2025-12-04 14:46:45.291 INFO: Epoch 187: head: Default, loss=0.00065283, RMSE_E_per_atom=    2.64 meV, RMSE_F=    8.08 meV / A
+2025-12-04 14:46:45.294 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-175.pt
+2025-12-04 14:46:45.341 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-187.pt
+2025-12-04 14:50:22.607 INFO: Epoch 188: head: Default, loss=0.00065462, RMSE_E_per_atom=    2.66 meV, RMSE_F=    8.09 meV / A
+2025-12-04 14:53:59.713 INFO: Epoch 189: head: Default, loss=0.00068396, RMSE_E_per_atom=    2.54 meV, RMSE_F=    8.27 meV / A
+2025-12-04 14:57:36.920 INFO: Epoch 190: head: Default, loss=0.00063972, RMSE_E_per_atom=    2.72 meV, RMSE_F=    7.99 meV / A
+2025-12-04 14:57:36.923 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-187.pt
+2025-12-04 14:57:36.941 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-190.pt
+2025-12-04 15:01:14.330 INFO: Epoch 191: head: Default, loss=0.00066535, RMSE_E_per_atom=    2.75 meV, RMSE_F=    8.15 meV / A
+2025-12-04 15:04:51.363 INFO: Epoch 192: head: Default, loss=0.00067150, RMSE_E_per_atom=    2.57 meV, RMSE_F=    8.19 meV / A
+2025-12-04 15:08:28.277 INFO: Epoch 193: head: Default, loss=0.00063919, RMSE_E_per_atom=    2.53 meV, RMSE_F=    7.99 meV / A
+2025-12-04 15:08:28.279 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-190.pt
+2025-12-04 15:08:28.296 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-193.pt
+2025-12-04 15:12:05.876 INFO: Epoch 194: head: Default, loss=0.00062745, RMSE_E_per_atom=    2.62 meV, RMSE_F=    7.92 meV / A
+2025-12-04 15:12:05.879 DEBUG: Deleting old checkpoint file: ./checkpoints/MACE_model_run-123_epoch-193.pt
+2025-12-04 15:12:05.883 DEBUG: Saving checkpoint: ./checkpoints/MACE_model_run-123_epoch-194.pt
+2025-12-04 15:15:43.329 INFO: Epoch 195: head: Default, loss=0.00063961, RMSE_E_per_atom=    2.81 meV, RMSE_F=    7.99 meV / A
+2025-12-04 15:19:20.380 INFO: Epoch 196: head: Default, loss=0.00063704, RMSE_E_per_atom=    2.64 meV, RMSE_F=    7.98 meV / A
